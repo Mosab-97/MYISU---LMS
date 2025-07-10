@@ -17,39 +17,37 @@ const Homepage: React.FC = () => {
 
   return (
     <div className={`min-h-screen flex flex-col md:flex-row ${isRTL ? 'rtl' : 'ltr'}`}>
-      {/* Left Section - Branding */}
-      <div className="w-full md:w-1/2 bg-white flex flex-col justify-center items-center px-10 py-24 text-center">
+      {/* Left Section */}
+      <div className="w-full md:w-1/2 bg-white flex flex-col justify-center items-center px-6 py-20 text-center">
         <motion.img
-          src="/images/logo-ibn sina.png"
-          alt="MyISU Logo"
-          className="h-32 w-auto mb-8 mx-auto"
+          src="/logo-ibn sina.svg"
+          alt={t('homepage.title')}
+          className="h-28 mb-6"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         />
 
         <motion.h1
-          className="text-5xl font-extrabold text-gray-900 tracking-tight"
+          className="text-4xl font-bold text-gray-900 tracking-tight"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-          MyISU Student Portal
+          {t('homepage.title')}
         </motion.h1>
 
         <motion.p
-          className="mt-6 text-xl text-gray-700 max-w-lg mx-auto"
+          className="mt-4 text-lg text-gray-600 max-w-md"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
         >
-          {isRTL
-            ? 'منصة الطالب الرسمية لجامعة ابن سينا. تسجيل الدخول للوصول إلى الدورات والحضور والمزيد.'
-            : 'The official student platform for Ibn Sina University. Log in to access your courses, attendance, and more.'}
+          {t('homepage.description')}
         </motion.p>
       </div>
 
-      {/* Right Section - Hero & Button */}
+      {/* Right Section */}
       <div className="w-full md:w-1/2 bg-[#1C3D78] text-white relative overflow-hidden flex items-center justify-center px-10 py-20">
         <motion.div
           className="text-center z-10"
@@ -58,23 +56,21 @@ const Homepage: React.FC = () => {
           transition={{ delay: 0.4, duration: 0.7 }}
         >
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6 leading-tight">
-            {isRTL ? 'مرحباً بك في بوابة ابن سينا' : 'Welcome to Ibn Sina Portal'}
+            {t('homepage.welcome')}
           </h2>
           <p className="text-md md:text-lg text-blue-100 mb-10 max-w-md mx-auto leading-relaxed">
-            {isRTL
-              ? 'كل ما تحتاجه كطالب في مكان واحد. تعلم، تابع، وانمو.'
-              : 'Everything you need as a student in one place. Learn, track, and grow.'}
+            {t('homepage.welcomeDesc')}
           </p>
 
           <button
             onClick={() => navigate('/login')}
             className="bg-white text-[#1C3D78] hover:bg-gray-100 font-semibold py-3 px-8 rounded-full transition-transform duration-300 hover:scale-105 shadow-lg"
           >
-            {isRTL ? 'دخول البوابة' : 'Access Portal'}
+            {t('homepage.accessPortal')}
           </button>
         </motion.div>
 
-        {/* Background Blob Animation */}
+        {/* Background Blobs */}
         <div className="absolute -top-32 -right-32 w-[400px] h-[400px] bg-white/10 rounded-full blur-3xl z-0 animate-pulse" />
         <div className="absolute bottom-0 left-0 w-40 h-40 bg-indigo-500/20 rounded-full blur-2xl z-0 animate-ping" />
       </div>

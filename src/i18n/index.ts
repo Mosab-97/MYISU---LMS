@@ -13,7 +13,7 @@ const resources = {
       'nav.logout': 'Logout',
       'nav.login': 'Login',
       'nav.register': 'Register',
-      
+
       // Common
       'common.loading': 'Loading...',
       'common.error': 'Error',
@@ -60,7 +60,7 @@ const resources = {
       'common.none': 'None',
       'common.yes': 'Yes',
       'common.no': 'No',
-      
+
       // Auth
       'auth.login.title': 'Login to MyISU Portal',
       'auth.login.subtitle': 'Access your university dashboard',
@@ -76,7 +76,7 @@ const resources = {
       'auth.rememberMe': 'Remember me',
       'auth.alreadyHaveAccount': 'Already have an account?',
       'auth.dontHaveAccount': "Don't have an account?",
-      
+
       // Dashboard
       'dashboard.welcome': 'Welcome to MyISU Portal',
       'dashboard.student.title': 'Student Dashboard',
@@ -86,7 +86,7 @@ const resources = {
       'dashboard.quickActions': 'Quick Actions',
       'dashboard.stats': 'Statistics',
       'dashboard.summary': 'Summary',
-      
+
       // Contact
       'contact.title': 'Contact Us',
       'contact.message': 'Message',
@@ -106,6 +106,13 @@ const resources = {
       'contact.yourFullName': 'Your full name',
       'contact.yourEmail': 'your.email@example.com',
       'contact.sending': 'Sending...',
+
+      // Homepage
+      'homepage.title': 'MyISU Student Portal',
+      'homepage.description': 'The official student platform for Ibn Sina University. Log in to access your courses, attendance, and more.',
+      'homepage.welcome': 'Welcome to Ibn Sina Portal',
+      'homepage.welcomeDesc': 'Everything you need as a student in one place. Learn, track, and grow.',
+      'homepage.accessPortal': 'Access Portal',
     },
   },
   ar: {
@@ -119,7 +126,7 @@ const resources = {
       'nav.logout': 'تسجيل الخروج',
       'nav.login': 'تسجيل الدخول',
       'nav.register': 'إنشاء حساب',
-      
+
       // Common
       'common.loading': 'جاري التحميل...',
       'common.error': 'خطأ',
@@ -166,7 +173,7 @@ const resources = {
       'common.none': 'لا يوجد',
       'common.yes': 'نعم',
       'common.no': 'لا',
-      
+
       // Auth
       'auth.login.title': 'تسجيل الدخول إلى بوابة MyISU',
       'auth.login.subtitle': 'الوصول إلى لوحة تحكم الجامعة',
@@ -182,7 +189,7 @@ const resources = {
       'auth.rememberMe': 'تذكرني',
       'auth.alreadyHaveAccount': 'لديك حساب بالفعل؟',
       'auth.dontHaveAccount': 'ليس لديك حساب؟',
-      
+
       // Dashboard
       'dashboard.welcome': 'مرحباً بك في بوابة MyISU',
       'dashboard.student.title': 'لوحة تحكم الطالب',
@@ -192,7 +199,7 @@ const resources = {
       'dashboard.quickActions': 'الإجراءات السريعة',
       'dashboard.stats': 'الإحصائيات',
       'dashboard.summary': 'الملخص',
-      
+
       // Contact
       'contact.title': 'اتصل بنا',
       'contact.message': 'الرسالة',
@@ -212,6 +219,13 @@ const resources = {
       'contact.yourFullName': 'اسمك الكامل',
       'contact.yourEmail': 'your.email@example.com',
       'contact.sending': 'جاري الإرسال...',
+
+      // Homepage
+      'homepage.title': 'منصة الطالب الرسمية لجامعة ابن سينا',
+      'homepage.description': 'تسجيل الدخول للوصول إلى الدورات والحضور والمزيد.',
+      'homepage.welcome': 'مرحباً بك في بوابة ابن سينا',
+      'homepage.welcomeDesc': 'كل ما تحتاجه كطالب في مكان واحد. تعلم، تابع، وانمو.',
+      'homepage.accessPortal': 'دخول البوابة',
     },
   },
 };
@@ -220,7 +234,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'en',
+    lng: 'en', // default language
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false,
@@ -228,3 +242,4 @@ i18n
   });
 
 export default i18n;
+
