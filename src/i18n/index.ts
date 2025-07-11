@@ -86,6 +86,18 @@ const resources = {
       'dashboard.quickActions': 'Quick Actions',
       'dashboard.stats': 'Statistics',
       'dashboard.summary': 'Summary',
+      'dashboard.overview': 'Overview',
+      'dashboard.myCourses': 'My Courses',
+      'dashboard.attendance': 'Attendance',
+      'dashboard.grades': 'Grades',
+      'dashboard.settings': 'Settings',
+      'dashboard.credits': 'Credits',
+      'dashboard.enrolledCourses': 'Enrolled Courses',
+      'dashboard.logout': 'Log out',
+      'dashboard.darkMode': 'Dark Mode',
+      'dashboard.settingsDescription': 'Manage your account settings and preferences.',
+      'dashboard.attendanceRate': 'Attendance Rate',
+      'dashboard.averageGrade': 'Average Grade',
 
       // Contact
       'contact.title': 'Contact Us',
@@ -115,6 +127,7 @@ const resources = {
       'homepage.accessPortal': 'Access Portal',
     },
   },
+
   ar: {
     translation: {
       // Navigation
@@ -130,7 +143,7 @@ const resources = {
       // Common
       'common.loading': 'جاري التحميل...',
       'common.error': 'خطأ',
-      'common.success': 'نجح',
+      'common.success': 'نجاح',
       'common.save': 'حفظ',
       'common.cancel': 'إلغاء',
       'common.delete': 'حذف',
@@ -199,6 +212,18 @@ const resources = {
       'dashboard.quickActions': 'الإجراءات السريعة',
       'dashboard.stats': 'الإحصائيات',
       'dashboard.summary': 'الملخص',
+      'dashboard.overview': 'نظرة عامة',
+      'dashboard.myCourses': 'دوراتي',
+      'dashboard.attendance': 'الحضور',
+      'dashboard.grades': 'الدرجات',
+      'dashboard.settings': 'الإعدادات',
+      'dashboard.credits': 'الساعات المعتمدة',
+      'dashboard.enrolledCourses': 'المقررات المسجلة',
+      'dashboard.logout': 'تسجيل الخروج',
+      'dashboard.darkMode': 'الوضع الليلي',
+      'dashboard.settingsDescription': 'قم بإدارة إعدادات حسابك وتفضيلاتك.',
+      'dashboard.attendanceRate': 'معدل الحضور',
+      'dashboard.averageGrade': 'المعدل التراكمي',
 
       // Contact
       'contact.title': 'اتصل بنا',
@@ -213,8 +238,8 @@ const resources = {
       'contact.contactInformation': 'معلومات الاتصال',
       'contact.responseTime': 'وقت الاستجابة',
       'contact.helpMessage': 'نحن هنا للمساعدة. أرسل لنا رسالة وسنرد في أقرب وقت ممكن.',
-      'contact.responseMessage': 'نرد عادة على الرسائل خلال 24 ساعة في أيام العمل.',
-      'contact.urgentMatters': 'للأمور العاجلة، يرجى الاتصال على رقمنا الرئيسي.',
+      'contact.responseMessage': 'نرد عادة خلال 24 ساعة في أيام العمل.',
+      'contact.urgentMatters': 'للأمور العاجلة، يرجى الاتصال بنا على الرقم الرئيسي.',
       'contact.tellUsHow': 'أخبرنا كيف يمكننا مساعدتك...',
       'contact.yourFullName': 'اسمك الكامل',
       'contact.yourEmail': 'your.email@example.com',
@@ -234,7 +259,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'en', // default language
+    lng: 'en',
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false,
